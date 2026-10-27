@@ -10,6 +10,9 @@ public class CalculadoraDescontoTDD {
         if (isVIP) {
             valorFinal *= 0.95;
         }
+        if (valorFinal < 100.00) {
+            valorFinal += 15.00;
+        }
         return valorFinal;
     }
 }
